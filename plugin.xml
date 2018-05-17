@@ -95,11 +95,8 @@ SOFTWARE.
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.CAMERA"/>
             <uses-permission android:name="android.permission.FLASHLIGHT"/>
             <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-            <!-- Not required to allow users to work around this -->
-            <uses-feature android:name="android.hardware.camera" android:required="false"/>
         </config-file>
 
         <source-file src="src/android/com.google.zxing.client.android.captureactivity.jar" target-dir="libs"/>
